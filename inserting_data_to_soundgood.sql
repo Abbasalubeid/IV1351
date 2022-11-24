@@ -102,5 +102,5 @@ VALUES
 
 INSERT INTO discount (amount, student_id, payment_catalog_id)
 VALUES
-(100, 1, 2);
+(100, 1, 2)
 (100, 2, 1);
