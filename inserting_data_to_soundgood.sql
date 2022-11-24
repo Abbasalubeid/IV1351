@@ -26,8 +26,8 @@ INSERT INTO ensemble (time, genre, maximum_number_of_students,minimum_number_of_
 student_id, instructor_id,)
 VALUES
 ('2021-10-20 15:00:00', 'Rock', 10, 5, 1, 1),
-('2021-10-10 10:00:00', 'Country', 10, '5','2', '2'),
-('2021-10-03 11:00:00', 'Pop', '10', '5','1', '3');
+('2021-10-10 10:00:00', 'Country', 10, 5, 2, 2),
+('2021-10-03 11:00:00', 'Pop', 10, 5, 1, 3);
 
 INSERT INTO student_ensemble (student_id, ensemble_id)
 VALUES
