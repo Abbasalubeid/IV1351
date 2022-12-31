@@ -14,7 +14,7 @@ CREATE TABLE instruments_catalog (
 CREATE TABLE payment_catalog (
  id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
  price INT,
- payment_method CHAR(10)
+ payment_method CHAR(300)
 );
 
 CREATE TABLE price_catalog (
@@ -38,7 +38,7 @@ CREATE TABLE salary_catalog (
 
 CREATE TABLE discount (
  id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
- amount INT NOT NULL,
+ amount FLOAT NOT NULL,
  payment_catalog_id INT NOT NULL REFERENCES payment_catalog (id)
 );
 
@@ -127,10 +127,10 @@ CREATE TABLE phone (
 );
 
 CREATE TABLE sibling (
- student_id INT NOT NULL REFERENCES student (id) ON DELETE CASCADE,
+ id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+ siblings_student_id INT REFERENCES student (id) ON DELETE CASCADE,
  first_name VARCHAR(100),
- last_name VARCHAR(100),
- PRIMARY KEY("student_id")
+ last_name VARCHAR(100)
 );
 
 CREATE TABLE student_ensemble (
