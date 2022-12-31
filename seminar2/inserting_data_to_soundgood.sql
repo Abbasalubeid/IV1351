@@ -117,15 +117,15 @@ insert into discount (amount, payment_catalog_id) values (0.1, 2);
 insert into discount (amount, payment_catalog_id) values (0.3, 3);
 
 
-insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Valene', 'Thornthwaite', '197707266214', 1, 'Beginner', 1, 1);
+insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Valene', 'Thornthwaite', '197707266214', 1, 'beginner', 1, 1);
 insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Hadlee', 'Cosgriff', '196203298960', 2, 'intermediate', 2, 2);
-insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Riccardo', 'Pennycook', '199305288590', 3, 'Beginner', 3, 3);
+insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Riccardo', 'Pennycook', '199305288590', 3, 'beginner', 3, 3);
 insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Carlynne', 'Ellicombe', '198805208348', 4, 'intermediate', 4, 4);
 insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Reyna', 'Healings', '199505208349', 5, 'intermediate', 5, 5);
-insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Chester', 'Bum', '197405208344', 6, 'Beginner', 6, 6);
+insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Chester', 'Bum', '197405208344', 6, 'beginner', 6, 6);
 insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Aurie', 'Cuffin', '196005118432', 7, 'intermediate', 7, 7);
-insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Dominica', 'Doctor', '199705081520', 8, 'Beginner', 8, 8);
-insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Zacharie', 'Lemmon', '198005165587', 9, 'Beginner', 9, 9);
+insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Dominica', 'Doctor', '199705081520', 8, 'beginner', 8, 8);
+insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Zacharie', 'Lemmon', '198005165587', 9, 'beginner', 9, 9);
 insert into instructor (first_name, last_name, personal_number, employment_id, skill_level, address_id, salary_catalog_id) values ('Calley', 'Grgic', '193312176518', 10, 'intermediate', 10, 10);
 
 
@@ -134,6 +134,11 @@ insert into student (first_name, last_name, personal_number, address_id, payment
 insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id, discount_id) values ('Tybie', 'Hawkslee', '200005208343', 3, 3, 3);
 insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id) values ('Binni', 'Keenan', '200905208344', 4, 4);
 insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id) values ('Dorelle', 'Tolhurst', '200005208030', 5, 5);
+insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id, discount_id) values ('Hildagard', 'Dring', '200202158048', 1, 1, 1);
+insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id, discount_id) values ('Jonas', 'Dring', '199907023101', 1, 1, 1);
+insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id, discount_id) values ('Alta', 'Buche', '199808107240', 2, 2, 2);
+insert into student (first_name, last_name, personal_number, address_id, payment_catalog_id, discount_id) values ('Jilli', 'Hawkslee', '200101224143', 3, 3, 3);
+
 
 insert into contact_person (student_id, first_name, last_name, personal_number) values (1, 'Daisi', 'Innocenti', '198905187830');
 insert into contact_person (student_id, first_name, last_name, personal_number) values (2, 'Binnie', 'Mallall', '194912192509');
@@ -157,27 +162,48 @@ insert into email (email_address, instructor_id) values ('denion7@w3.org', 8);
 insert into email (email_address, instructor_id) values ('vmanktelow8@liveinternet.ru', 9);
 insert into email (email_address, instructor_id) values ('todooghaine9@bluehost.com', 10);
 
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/20/2021 15:00:00', 'Female', 18, 5, 1);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('5/13/2022 15:00:00', 'Male', 18, 5, 2);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('1/25/2022 15:00:00', 'Male', 16, 6, 3);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('3/29/2022 15:00:00', 'Genderqueer', 17, 7, 4);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('5/9/2022 15:00:00', 'Male', 17, 7, 5);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('7/17/2022 15:00:00', 'Male', 18, 7, 6);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('5/26/2022 15:00:00', 'Female', 20, 10, 7);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('8/27/2022 15:00:00', 'Male', 16, 10, 8);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('2/21/2022 15:00:00', 'Female', 17, 10, 9);
-insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/30/2021 15:00:00', 'Non-binary', 18, 6, 10);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/12/2022 15:00:00', 'pop', 5, 2, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('03/01/2021 12:00:00', 'rock', 5, 2, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('01/02/2021 14:00:00', 'country', 10, 3, 2);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('03/10/2022 07:00:00', 'reggae', 12, 4, 2);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/14/2022 15:00:00', 'pop', 4, 2, 1);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/16/2022 16:00:00', 'jazz', 4, 2, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/15/2022 12:00:00', 'hiphop', 3, 1, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('08/12/2022 10:00:00', 'jazz', 5, 2, 2);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('02/12/2022 17:00:00', 'reggae', 3, 1, 1);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/11/2021 15:00:00', 'pop', 4, 2, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/19/2022 15:00:00', 'pop', 5, 2, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/21/2022 15:00:00', 'pop', 4, 2, 1);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/22/2022 12:00:00', 'hiphop', 3, 1, 5);
+insert into ensemble (time, genre, maximum_number_of_students, minimum_number_of_students, instructor_id) values ('12/23/2022 16:00:00', 'jazz', 4, 2, 5);
 
-insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (178, '12/28/2021 15:00:00', '4', 7, 1, 1, 1, 1, 'intermediate');
-insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (233, '12/20/2021 15:00:00', '2', 6, 2, 2, 2, 2, 'intermediate');
-insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (260, '9/21/2022 15:00:00', '1', 5, 3, 3, 3, 3, 'Beginner');
-insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (254, '5/31/2022 15:00:00', '3', 8, 5, 5, 5, 5, 'Beginner');
+
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (178, '04/02/2021 12:00:00', '4', 7, 1, 1, 1, 1, 'intermediate');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (233, '01/04/2021 13:00:00', '2', 6, 2, 2, 2, 2, 'intermediate');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (260, '12/03/2022 15:00:00', '1', 5, 3, 3, 3, 3, 'beginner');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (254, '05/04/2022 11:00:00', '3', 8, 5, 5, 5, 5, 'beginner');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (254, '05/12/2022 11:00:00', '1', 8, 5, 5, 5, 5, 'intermediate');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (250, '12/28/2022 09:00:00', '4', 8, 5, 2, 5, 5, 'intermediate');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (254, '01/20/2022 07:00:00', '2', 6, 5, 1, 5, 5, 'beginner');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (260, '12/12/2022 12:00:00', '3', 5, 1, 1, 5, 5, 'advanced');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (254, '12/15/2022 13:00:00', '4', 5, 3, 2, 5, 5, 'beginner');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (251, '11/02/2022 16:00:00', '3', 5, 3, 1, 5, 5, 'advanced');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (250, '12/03/2022 17:00:00', '2', 6, 1, 5, 5, 5, 'advanced');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (170, '03/09/2019 09:00:00', '§', 7, 1, 1, 1, 1, 'intermediate');
+insert into group_lesson (group_id, time, room_id, minimum_number_of_students, student_id, instructor_id, address_id, price_catalog_id, skill_level) values (171, '01/19/2021 11:00:00', '1', 6, 2, 3, 1, 1, 'intermediate');
 
 
-insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('3/9/2022 15:00:00', '4', 1, 1, 1, 1, 'intermediate');
-insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('8/15/2022 15:00:00', '4', 2, 2, 2, 2, 'intermediate');
-insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('2/26/2022 15:00:00', '5', 3, 3, 3, 3, 'Beginner');
-insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('6/25/2022 15:00:00', '1', 5, 5, 5, 5, 'Beginner');
+
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('12/09/2022 12:00:00', '4', 1, 1, 1, 1, 'intermediate');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('08/12/2021 16:00:00', '4', 2, 2, 2, 2, 'intermediate');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('02/12/2022 17:00:00', '5', 3, 2, 3, 3, 'beginner');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('06/11/2021 10:00:00', '1', 5, 5, 5, 5, 'beginner');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('12/02/2022 09:00:00', '1', 2, 5, 5, 5, 'beginner');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('06/02/2021 11:00:00', '1', 2, 5, 5, 5, 'beginner');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('12/02/2022 12:00:00', '1', 3, 2, 5, 5, 'intermediate');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('12/02/2022 09:00:00', '1', 2, 5, 5, 5, 'intermediate');
+insert into individual_lesson (time, room_id, student_id, instructor_id, address_id, price_catalog_id, skill_level) values ('12/01/2022 11:00:00', '1', 5, 2, 5, 5, 'advanced');
+
 
 insert into instrument (type, bought, individual_lesson_id) values ('Piano', '2022-01-30', 1);
 insert into instrument (type, bought, individual_lesson_id) values ('Guitar', '2021-03-15', 2);
@@ -198,10 +224,44 @@ insert into phone (phone_number, instructor_id) values ('101-930-2745', 3);
 insert into phone (phone_number, instructor_id) values ('409-205-0891', 4);
 insert into phone (phone_number, instructor_id) values ('800-134-3762', 5);
 
-insert into sibling (student_id, first_name, last_name) values (1, 'Hildagard', 'Dring');
-insert into sibling (student_id, first_name, last_name) values (2, 'Alta', 'Buche');
-insert into sibling (student_id, first_name, last_name) values (3, 'Jilli', 'Hawkslee');
+insert into sibling (siblings_student_id, first_name, last_name) values (1, 'Hildagard', 'Dring'); -- Max Dring is 1
+insert into sibling (siblings_student_id, first_name, last_name) values (1, 'Jonas', 'Dring'); -- Max Dring is 1
+insert into sibling (siblings_student_id, first_name, last_name) values (6, 'Max', 'Dring'); -- Hildagard Dring is 6
+insert into sibling (siblings_student_id, first_name, last_name) values (6, 'Jonas', 'Dring'); -- Hildagard Dring is 6
+insert into sibling (siblings_student_id, first_name, last_name) values (7, 'Hildagard', 'Dring'); -- Jonas Dring is 7
+insert into sibling (siblings_student_id, first_name, last_name) values (7, 'Max', 'Dring'); -- Jonas Dring is 7
+
+
+insert into sibling (siblings_student_id, first_name, last_name) values (2, 'Alta', 'Buche'); -- Erie Buche is 2
+insert into sibling (siblings_student_id, first_name, last_name) values (8, 'Erie', 'Buche');  -- Alta Buche is 8
+insert into sibling (siblings_student_id, first_name, last_name) values (3, 'Jilli', 'Hawkslee'); -- Tybie Hawkslee is 3
+insert into sibling (siblings_student_id, first_name, last_name) values (9, 'Tybie', 'Hawkslee'); -- Jilli Hawkslee is 9
+
 
 insert into student_ensemble (student_id, ensemble_id) values (1, 1);
-insert into student_ensemble (student_id, ensemble_id) values (2, 2);
+insert into student_ensemble (student_id, ensemble_id) values (2, 1);
+insert into student_ensemble (student_id, ensemble_id) values (3, 1);
+insert into student_ensemble (student_id, ensemble_id) values (4, 1);
+insert into student_ensemble (student_id, ensemble_id) values (5, 1);
+
+insert into student_ensemble (student_id, ensemble_id) values (2, 7);
+
+
+insert into student_ensemble (student_id, ensemble_id) values (1, 5);
+insert into student_ensemble (student_id, ensemble_id) values (4, 5);
+insert into student_ensemble (student_id, ensemble_id) values (5, 5);
+
+insert into student_ensemble (student_id, ensemble_id) values (1, 11);
+insert into student_ensemble (student_id, ensemble_id) values (2, 11);
+insert into student_ensemble (student_id, ensemble_id) values (3, 11);
+insert into student_ensemble (student_id, ensemble_id) values (4, 11);
+insert into student_ensemble (student_id, ensemble_id) values (5, 11);
+
+insert into student_ensemble (student_id, ensemble_id) values (1, 12);
+insert into student_ensemble (student_id, ensemble_id) values (4, 12);
+insert into student_ensemble (student_id, ensemble_id) values (5, 12);
+
+insert into student_ensemble (student_id, ensemble_id) values (2, 13);
+
+
 
