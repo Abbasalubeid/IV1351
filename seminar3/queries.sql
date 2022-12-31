@@ -58,10 +58,12 @@
               GROUP BY type;
 
 
--- Query 2 --> Show the number of siblings per student
+-- Query 2 --> Show how many students has a certain number of siblings
 
-       -- Join the tables 'student' and 'sibling'. Then count each row where a student has a sibling,
-       -- grouped by the student id to sum the sibling for each student in one entry
+       -- 2.1 Join the tables 'student' and 'sibling'. Then count each row where a student has a sibling,
+       -- grouped by the student id to sum the number of siblings for each student in one entry.
+       -- Created a view to use in the next query to complete the assignment
+       CREATE VIEW siblings_per_student AS 
        SELECT student.id,
               COUNT(CASE
                       WHEN sibling.siblings_student_id IS NOT NULL 
@@ -72,6 +74,29 @@
        LEFT JOIN sibling ON student.id = sibling.siblings_student_id
        GROUP BY student.id
        ORDER BY student.id;
+
+       -- 2.2 Show how many students has a certain number of siblings.
+       -- The number of siblings is taken from the view 'siblings_per_student',
+       -- then, count the number of students that has each number.
+       -- Output gives one row for each number of siblings and the number of 
+       -- students who have that many siblings. 
+       SELECT number_of_siblings, count(*) AS number_of_students
+       FROM siblings_per_student 
+       GROUP BY number_of_siblings 
+       ORDER BY number_of_siblings;
+
+       -- Extra
+              SELECT count(number_of_siblings) AS number_of_students, 
+              CASE 
+                     WHEN number_of_siblings = 1 THEN 'one sibling' 
+                     WHEN number_of_siblings = 2 THEN 'two siblings' 
+                     WHEN number_of_siblings > 2 THEN 'more than two siblings' 
+                     WHEN number_of_siblings = 0 THEN 'no siblings' END AS sibling_status 
+              FROM siblings_per_student 
+              GROUP BY number_of_siblings
+              ORDER BY number_of_siblings;
+
+
 
 
 -- Query 3 --> List all instructors who has given more than a specific number of lessons during the current month
